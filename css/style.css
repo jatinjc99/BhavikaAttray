@@ -51,10 +51,13 @@ p {
 }
 
 .l-heading {
-  font-size: 4rem;
+  text-decoration: underline;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 45px;
   margin-bottom: 0.75rem;
   line-height: 1.1;
-  color: red;
+  color: black;
   
 }
 
@@ -87,7 +90,7 @@ p {
 }
 
 .btn:hover {
-  background: #7ab436;
+  background: #2b4d05;
 }
 
 .btn-dark {
@@ -136,7 +139,7 @@ p {
 
 /* Showcase */
 #showcase {
-  background: #333 url('../img/wallpaper.png') no-repeat center center/cover;
+  background: #333 url('/img/logos/favicon.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
 }
@@ -149,7 +152,6 @@ p {
   align-items: center;
   height: 100%;
   padding: 0 2rem;
-  /* Overlay */
   position: absolute;
   top: 65px;
   left:0;
