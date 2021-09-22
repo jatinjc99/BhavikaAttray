@@ -64,6 +64,7 @@
         <div class="container">
             <p class="lead">Hppiest birthday dearest Attray ❤️ <br> Hamesha hasti khilti reh <br> Jatin se ladti reh 🤪 But utna hi pyaar bhi karr bechare se 🥰 <br> And Jaldi se art by bhavika ko world famous kardee 🍻 <br> You know how much I love to photobomb your
                 pics and I'll continue to do it forever 😉 <br> Love you lots little one ❤️ <br> PS - I STILL REMEMBER THE DAY JAB TUNE MUJHE DHOKHA DIA THA, BUT OKAY I HOPE TU APNI GALTI JALD HI SUHDAREGI 🤪</p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -98,7 +99,18 @@
     <script src="./js/main.js"></script>
 
 
+    <audio src="./songs/eishu.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 </body>
 

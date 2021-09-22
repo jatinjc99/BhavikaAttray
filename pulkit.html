@@ -60,6 +60,7 @@
             <p class="lead">Happyy Birthhdayyyyy Attrayy❤️ <br> Keep vibin' & thrivin' everyday and may god bless you with all the success in your life😇 <br> You are the most funniest & happiest soul of our group❤️ <br> Here's to another blessed Birthday! <br> Stayy
                 Blessed, Stay Healthy 🤍 <br>
                 <br></p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -92,7 +93,18 @@
 
 
 
+    <audio src="./songs/pulkit.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 </body>
 

@@ -60,6 +60,7 @@
             <p class="lead">Happy birthday Attray, ambani ke upr koi hai to bss tu hi 😂 <br> ham sabko bigadne vali to tu hi hai😂 <br> first year tk ham bhot sudhre hue the but fir jabse second year mai terse mile ham sab double meaning batein krne lag gae😂😂 <br>                Jab ham mile the pehle tu jatin ki girlfriend thi hamare lie lekin ab to tu BRO hai(this is the highest level of praise i can give anyone, saksham ko to abhi tk ye position ni di maine😂). <br> Enjoy your day, party hard, maze karo and
                 So sorry mai ni aa paunga.🥲 <br>
                 <br></p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -89,6 +90,18 @@
     </div>
     </div>
 
+    <audio src="./songs/jeena.mpeg" id="my_audio"></audio>
+
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 
 

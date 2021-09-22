@@ -61,6 +61,7 @@
             <p class="lead">Srijana ki hai tu shaan <br> Anjali k aage pakde mane kaan <br> Best tho hai chocolate paan <br> Happy happy birthday meri jaann!! <br><br> Jaan h tu meriiii... Tujhe chaata koi or hai 😂 <br> I still remember jab scribble's day pr unknowingly
                 humne yeh same likha tha ek dusre k shirt pr😂❤️ <br> Bhai ittni memories kisi k sath nhi hogi jitni tere sath h .... <br> Class topper to getting suspension, <br> Wearing suits to sexiest dress we have, <br> Doing social work in rotract
                 to doing nothing and just laying on bed, <br> Celebrating cotu se cotu khushi to facing badi se badi problem!!! <br><br> We are always together..🥺 <br> Thankyou for being my soul sister!!! <br> I love youu <br> Xoxo <br> G <br></p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -91,7 +92,18 @@
     </div>
 
 
+    <audio src="./songs/garima.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 
 

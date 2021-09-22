@@ -59,6 +59,7 @@
     <section id="wish" class="bg-primary py-3 text-center">
         <div class="container">
             <p class="lead">Happy bday to you <br> May god bless you <br> Happy bday dear Bhavika 🎉 <br> Happy bday to you <br> Badiya dost hai tu, mere jokes pe aise hee hassti reh 🤣🥰 <br> Stay blessed and stay happy! ❤️</p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -91,7 +92,18 @@
 
 
 
+    <audio src="./songs/saksham.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 </body>
 

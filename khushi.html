@@ -59,6 +59,7 @@
     <section id="wish" class="bg-primary py-3 text-center">
         <div class="container">
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo autem, magnam ad corrupti officiis aperiam libero modi voluptatum beatae repellat labore vero dolor itaque architecto optio cumque, laboriosam expedita.</p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -88,7 +89,18 @@
     </div>
     </div>
 
+    <audio src="./songs/khushi.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 
 

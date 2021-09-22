@@ -69,26 +69,42 @@
             </h2>
             <p>
                 We all wish you a happy birthday, you are very special to all of us we all love you like hell you are the cutest. This Website shows all the great moments we had toghether and we will always be together
-            </p>
+            </p><br>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button><br><br>
             <h2> <span style="color: pink;"> Songs  </span> For You</h2>
             <ul class="list">
                 <li>
-                    by jatin :
-                    <a style="color: white
+                    By Jatin :
+                    <a style="color: pink
             ;" href="https://www.youtube.com/watch?v=kNdkQftM2ek">
               To the Stars
             </a>
                 </li>
-                <li>Song for you by Anjali and garima :</li>
-                <li>Song for you by eishux</li>
-                <li>Pulki</li>
-                <li>Jatin Chopra : Account Handler</li>
-                <li>Saksham Arora : IT Head</li>
+                <li>
+                    By Anrika :
+                    <a style="color: pink
+            ;" href="https://www.youtube.com/watch?v=kNdkQftM2ek">
+              Veerey
+            </a>
+                </li>
+                <li>
+                    By Gang Bang :
+                    <a style="color: pink
+            ;" href="https://www.youtube.com/watch?v=kNdkQftM2ek">
+              Yeh ladki pagal hai
+            </a>
+                </li>
+                <li>
+                    By college friends :
+                    <a style="color: pink
+            ;" href="https://www.youtube.com/watch?v=kNdkQftM2ek">
+              Jaane Kyun
+            </a>
+                </li>
             </ul>
         </div>
     </section>
 
-    <!-- Section: What We Do -->
     <section id="what" class="bg-light py-1">
         <div class="container">
             <h2 class="m-heading text-center">
@@ -127,8 +143,19 @@
         </div>
     </section>
 
-    <!-- Local JS File -->
-    <script src="js/main.js"></script>
+
+    <audio src="./songs/bday.mpeg" id="my_audio"></audio>
+
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 </body>
 
 </html>

@@ -59,6 +59,7 @@
         <div class="container">
             <p class="lead">Happiest Birthday ASHTRAY ❤️🥃. <br> The girl who brought all charm to our group and made it heaven 😂❤️. <br> May God unturn All Your Wishes 🤍✨ <br> Ever grateful to you coz you made me meet the best girl ❤️. <br> Happiest Birthday Love'
                 You ❤️ <br></p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -90,7 +91,18 @@
 
 
 
+    <audio src="./songs/jeena.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 
 </body>

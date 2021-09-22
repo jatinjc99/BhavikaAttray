@@ -59,6 +59,7 @@
     <section id="wish" class="bg-primary py-3 text-center">
         <div class="container">
             <p class="lead">Happiest birthday to the most chill out person ❤️ <br> you are definitely a pill of our laughters💕... <br> My beauty with brain😘... <br> Stay creative always🥂 <br> </p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -88,7 +89,18 @@
     </div>
     </div>
 
+    <audio src="./songs/riya.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 
 

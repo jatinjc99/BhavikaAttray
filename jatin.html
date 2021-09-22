@@ -61,11 +61,14 @@
 
             <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, et iusto. Quod vel natus inventore hic corrupti necessitatibus neque? Velit officia nobis eos laborum sit. Doloremque dignissimos illum aut praesentium?</p>
 
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
+
         </div>
     </section>
 
     <div style="margin-top: 50px; margin-bottom: 50px;" class=" center ">
         <h1 class="center">You and Me 🥰</h1>
+
         <div class="grid-row">
             <div class="grid-column">
                 <img src="./img/jatin/1.jpeg" class="img-fluid-1">
@@ -90,7 +93,18 @@
     </div>
 
 
-<audio src="./songs/eishu.mp3" autoplay></audio>
+    <audio src="./songs/jatin.mp3" id="my_audio"></audio>
+
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 
 

@@ -58,7 +58,12 @@
 
     <section id="wish" class="bg-primary py-3 text-center">
         <div class="container">
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo autem, magnam ad corrupti officiis aperiam libero modi voluptatum beatae repellat labore vero dolor itaque architecto optio cumque, laboriosam expedita.</p>
+            <p class="lead">Happy Birthdayyyy Bhavii❤️❤️❤️🧁🧁🧁🧁🧁🧁 Happpy happpy Birthday meri jaaaan❤️ Ik how much I irritate you🥺 And i also know how much you love me inspite of thatt Everyoneee has flawssss Buttt you neverrrr❤️make me feel i have one You areee
+                alwaysssss thereee forrr meeee❤️❤️ Alwaysss pamperingg mee❤️ srslyyy I cant imagine my life without you❤️ Sooo you are 20 Lallu Butt theee talenttt you haveeee is juss beyond your ageee jaaan Artbybhavika is the bestttt I reallly really
+                jus adore your art Everyone do❤️ ANRIKA❤️ You were myyy firstt friendd in 8th class (pls dont say shaily)😂 I remember that was you❤️ The time we had spent together ❤️ is more than i can ever thought Remember your chotu sa class in 11th
+                12th🥺 ❤️❤️ I miss seeing you through that windowwww And askinggg you toooo comeee outside but always ashwini would come😂😂 Nevermind❤️ You r always there in myyy besttt memoriesss ❤️ And always there for me in my worth I didn’t you that
+                you would be my “person”❤️for lifeee Nowww i knowwww ( wbu bitch) I love youuu and i will be theree for youuu❤️❤️coz you r there for me tooo💗💗💗💗 Happypypypypypy birthdayyyyayyayayayay</p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -91,7 +96,18 @@
 
 
 
+    <audio src="./songs/garima.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 </body>
 

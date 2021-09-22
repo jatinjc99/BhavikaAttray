@@ -60,6 +60,7 @@
         <div class="container">
             <p class="lead">Happy Happy vala Birthday to the anokhi person ♥️♥️ <br> Cutieee love you loads <br> You are the one who inspired me to paint <br> You will always remain close to my heart <br> I hope our friendship stay same <br> College ke baad agr bhooli
                 to ghr aakr chppal se marna hain <br> May this year brings joy to your life <br> Stay blessed Bhavika✨💫 <br></p>
+            <button class="song-btn" id="play-song">Kripya yaha dabaye</button>
 
         </div>
     </section>
@@ -89,7 +90,18 @@
     </div>
     </div>
 
+    <audio src="./songs/riya.mpeg" id="my_audio"></audio>
 
+    <script>
+        document.getElementById("play-song").addEventListener("click", function() {
+            console.log("clicked");
+            if (document.getElementById("my_audio").duration > 0 && !document.getElementById("my_audio").paused) {
+                document.getElementById("my_audio").pause();
+            } else {
+                document.getElementById("my_audio").play();
+            }
+        })
+    </script>
 
 
 
