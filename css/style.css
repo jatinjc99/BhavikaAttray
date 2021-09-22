@@ -47,7 +47,7 @@ p {
 }
 
 .bg-primary {
-    background: #93cb52;
+    background: pink;
     color: #fff;
 }
 
@@ -71,6 +71,7 @@ p {
     font-size: 2rem;
     margin-bottom: 2rem;
     font-style: italic;
+    color: black;
 }
 
 .py-1 {
