@@ -257,15 +257,27 @@ p {
 }
 
 .dropbtn {
-    border: #2b4d05;
     background-color: black;
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    font-size: 27px;
-    width: 250px;
-    padding-top: 4px;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
     margin-right: 75px;
+    text-align: center;
+}
+
+.dropbtn-2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 50px;
+    font-size: 20px;
+    width: 100px;
+    margin-right: 25px;
 }
 
 .dropdown-content a {
